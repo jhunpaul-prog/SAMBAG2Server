@@ -37,7 +37,7 @@ export default class Homescreen extends Component {
     const reportId = uuid.v4();  // Generate a unique identifier
     
     try {
-      const response = await axios.post('http://192.168.191.107:5000/report', {  // Use the correct endpoint
+      const response = await axios.post('https://sambag2server.onrender.com/report', {  // Use the correct endpoint
         reportId,   // Include the unique identifier
         name,
         contact,          
